@@ -1,0 +1,105 @@
+nav img {
+  margin-right: 10px;
+}
+
+#main {
+  background-image: url("../images/Tromso-fjord.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f6f6f6;
+  background-position: center;
+  height: 100%;
+}
+/* creating a box style */
+.container {
+  margin: 0 auto;
+  width: 960px;
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+}
+
+.bioImage {
+  max-width: 100%;
+  height: auto;
+}
+
+#bioContent {
+  max-width: 100%;
+  margin-top: 5px;
+}
+
+#contactForm {
+  margin-left: -25px;
+}
+
+ul.noStyle {
+  list-style: none;
+}
+
+form .row {
+  margin-top: 15px;
+}
+
+.portfolioLinks {
+  text-align: center;
+  clear: both;
+}
+
+.portfolioLinks img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  margin: 5px;
+}
+
+a img:hover {
+  -webkit-box-shadow: 0px 0px 18px 1px rgba(78, 119, 187, 1);
+  -moz-box-shadow: 0px 0px 18px 1px rgba(78, 119, 187, 1);
+  box-shadow: 0px 0px 18px 1px rgba(78, 119, 187, 1);
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  border-top: 2px hsl(210, 17%, 72%) solid;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 735px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+  }
+
+  #contactForm {
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5px;
+  }
+
+  #contactForm {
+    margin: 15px 0;
+  }
+
+  .bioImage {
+    max-width: 85%;
+    height: auto;
+  }
+}
