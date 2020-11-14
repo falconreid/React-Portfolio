@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
-import About from "./components/pages/About";
-import Portfolio from "./components/pages/Portfolio";
-import Contact from "./components/pages/Contact";
+import About from "../src/components/About";
+import Contact from "../src/components/Contact";
+import Portfolio from "../src/components/Portfolio";
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" component={Contact} />
         </div>
       </Router>
+
       <Footer />
     </div>
   );
