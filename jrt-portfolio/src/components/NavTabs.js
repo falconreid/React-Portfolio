@@ -7,6 +7,16 @@ function NavTabs() {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
+        <img
+          src="./images/J-icon.png"
+          width="25"
+          height="25"
+          alt="J"
+          loading="lazy"
+        />
+        <a className="navbar-brand" href="#">
+          Joel Terrell
+        </a>
         <Link
           to="/"
           className={location.pathname === "/" ? "nav-link active" : "nav-link"}
