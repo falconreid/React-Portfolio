@@ -1,9 +1,11 @@
 import React from "react";
+import './styles.css';
+import Tromso from './Tromso-fjord.jpg';
 
 function About() {
   return (
     //  Main Section
-    <main id="main">
+    <main id="main" styles={{ backgroundImage:`url(${Tromso})` }}>
       {/* Bootstrap Rows & Columns  */}
       <article className="container">
         <div classNameName="row">
@@ -14,7 +16,7 @@ function About() {
           <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 align-items-center">
             <img
               className="bioImage"
-              src="images/JoelT.jpg"
+              src="./images/JoelT.jpg"
               title="Joel Terrell"
               alt="Joel Terrell"
             />
