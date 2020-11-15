@@ -1,11 +1,11 @@
 import React from "react";
 import './styles.css';
-import Tromso from './Tromso-fjord.jpg';
+import Tromso from "./Tromso-fjord.jpg";
 
 function About() {
   return (
     //  Main Section
-    <main id="main" styles={{ backgroundImage:`url(${Tromso})` }}>
+    <main id="main" style={{ backgroundImage:`url(${Tromso})` }}>
       {/* Bootstrap Rows & Columns  */}
       <article className="container">
         <div classNameName="row">

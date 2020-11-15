@@ -1,12 +1,12 @@
 import React from "react";
 import './styles.css';
-import Tromso from './Tromso-fjord.jpg';
+import Tromso from "./Tromso-fjord.jpg";
 
 function Portfolio() {
   return (
       
     //  Main Section
-    <div id="main" styles={{ backgroundImage:`url(${Tromso})` }}>
+    <div id="main" style={{ backgroundImage:`url(${Tromso})` }}>
      <div className="container">
          <h1>Portfolio</h1>
      

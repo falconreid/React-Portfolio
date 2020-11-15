@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles.css";
 import MyForm from "./myform.js";
-import Tromso from './Tromso-fjord.jpg';
+import Tromso from "./Tromso-fjord.jpg";
 
 
 function Contact() {
   return (
-    <div id="main" styles={{ backgroundImage:`url(${Tromso})` }} >
+    <div id="main" style={{ backgroundImage:`url(${Tromso})` }} >
        
     <div className="container">
         <div className="row">
