@@ -22,16 +22,18 @@ function Contact() {
 <h3>
     Send me an email to connect:
 </h3>
-</div>
 <div>
   <p>joel@FalconReidDesign.com</p>
   <p>720.937.7832</p>
   <p><a href="https://www.linkedin.com/in/joelterrell/" title="Find me on Github">Find me on LinkedIn.</a></p>
   <p><a href="https://github.com/falconreid" title="Find me on Github">Find me on Github.</a></p>
   <p>See my <a href="https://docs.google.com/document/d/1z33ZQWOCmL-ka5iJAQfP5nOrPLXkY1WPDmj8g1UMwNk/edit?usp=sharing" target="_blank" title="Joel Terrell's Resume">Resume</a></p>
-  
+  <br/>
+  <MyForm />
 </div>
-<MyForm />
+</div>
+
+
 </div>
 </div>
 </div>

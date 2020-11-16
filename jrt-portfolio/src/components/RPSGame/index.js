@@ -1,0 +1,96 @@
+import React from "react";
+import "./styles.css";
+
+function NavTabs() {
+    
+
+    <div style="margin: 0 auto;">
+      <img
+        src="images/9-RPS-example.png"
+        alt="Rock Paper Scissors Game"
+        title="Rock Paper Scissors Game"
+      />
+
+      <script>
+        var rpsArray = ["rock", "paper", "scissors"];
+        alert(
+          "We're going to play Rock Paper Scissors. You will choose Rock, or Paper or Scissors and I will choose one too. Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. Are you Ready?"
+        );
+        var wins = 0;
+        var lose = 0;
+        var ties = 0;
+        var rounds = 0;
+
+        for (var i = 0; i < 10; i++) {
+          // Generate a random decimal number between 0 and 1
+          var num = Math.floor(Math.random() * 3);
+          var compChoice = rpsArray[num];
+          var userChoice = prompt(
+            "What is your choice? Rock, Paper or Scissors?"
+          );
+          userChoice = userChoice.toLowerCase();
+          // Display in console
+          console.log(num);
+
+          // if else statements for rock, paper and scissors
+          // computer wins
+          if (
+            (compChoice === "rock" && userChoice === "scissors") ||
+            (compChoice === "paper" && userChoice === "rock") ||
+            (compChoice === "scissors" && userChoice === "paper")
+          ) {
+            lose++;
+            rounds++;
+
+            alert(
+              "You chose " +
+                userChoice +
+                " and I chose " +
+                compChoice +
+                " so I win." +
+                "\nRound number " +
+                rounds
+            );
+          }
+
+          // user wins
+          if (
+            (compChoice === "rock" && userChoice === "paper") ||
+            (compChoice === "paper" && userChoice === "scissors") ||
+            (compChoice === "scissors" && userChoice === "rock")
+          ) {
+            wins++;
+            rounds++;
+            alert(
+              "You chose " +
+                userChoice +
+                " and I chose " +
+                compChoice +
+                " so you win!" +
+                "\nRound number " +
+                rounds
+            );
+          }
+          // ties
+
+          if (
+            (compChoice === "rock" && userChoice === "rock") ||
+            (compChoice === "paper" && userChoice === "paper") ||
+            (compChoice === "scissors" && userChoice === "scissors")
+          ) {
+            alert(
+              "You chose " +
+                userChoice +
+                " and I chose " +
+                compChoice +
+                " so it's a tie." +
+                "\nRound number " +
+                rounds
+            );
+            ties++;
+            rounds++;
+          }
+        }
+        alert("Wins: " + wins + "\nLosses: " + lose + "\nTies: " + ties);
+      </script>
+    </div>

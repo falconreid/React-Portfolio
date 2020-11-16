@@ -25,6 +25,8 @@ nav img {
 .bioImage {
   max-width: 100%;
   height: auto;
+  float:left;
+  margin-right: 20px;
 }
 
 #bioContent {
@@ -70,6 +72,89 @@ footer {
   padding: 8px;
   text-align: center;
   border-top: 2px hsl(210, 17%, 72%) solid;
+}
+
+form {
+  height: 100%;
+}
+
+input {
+  border-radius: 5px;
+  width: 250px;
+}
+
+button {
+  border-radius: 5px !important;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+input #textarea {
+  width: 250px !important;
+  height: 150px !important;
 }
 
 /* Portrait and Landscape */

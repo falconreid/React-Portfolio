@@ -3,6 +3,7 @@ import './styles.css';
 import Tromso from "./Tromso-fjord.jpg";
 
 function Portfolio() {
+  
   return (
       
     //  Main Section
@@ -12,8 +13,8 @@ function Portfolio() {
      
   {/* Portfolio Graphics & Links */}
            <div  className="row portfolioLinks">
-             <div className="col-md-6"><a href="https://calm-brushlands-06057.herokuapp.com/" target="_blank" rel="noreferrer"><image src="images/HandleBurgerBar-btn.jpg" alt=""/></a></div>
-             <div className="col-md-6"><a href="https://falconreid.github.io/EventSmash/index.html"><img src="images/EventSmashbtn.jpg" alt="EventSmash App" title="Event Smash: Effortless Event Planning" target="_blank" rel="noreferrer"/></a></div>
+             <div className="col-md-6"><a href="https://calm-brushlands-06057.herokuapp.com/" target="_blank" rel="noreferrer"><img src="images/HandleBurgerBar-btn.jpg" alt="HandleBurger Bar Link"/></a></div>
+             <div className="col-md-6"><a href="https://falconreid.github.io/EventSmash/index.html"><img src="images/EventSmashbtn.jpg"  title="Event Smash: Effortless Event Planning" target="_blank" rel="noreferrer" alt="Event Smash: Effortless Event Planning"/></a></div>
              </div>
  
              <div className="row portfolioLinks">
@@ -23,7 +24,7 @@ function Portfolio() {
  
                <div className="row portfolioLinks">
                  <div className="col-md-6"><a href="http://studdybuddyahasjbjt.herokuapp.com/" target="_blank" rel="noreferrer"><img src="images/StudyBuddy-Button.jpg" alt=""/></a></div>
-                 <div className="col-md-6"><a href="https://github.com/falconreid/Employee-Management-System" target="_blank"><image src="images/Emp-Track-btn.jpg"/></a></div>
+                 <div className="col-md-6"><a href="https://github.com/falconreid/Employee-Management-System" target="_blank" rel="noreferrer"><img src="images/Emp-Track-btn.jpg" alt="Employee Management System link"/></a></div>
                  </div>
  
                  <div className="row portfolioLinks">

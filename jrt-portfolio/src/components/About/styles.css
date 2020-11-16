@@ -25,6 +25,8 @@ nav img {
 .bioImage {
   max-width: 100%;
   height: auto;
+  float: left;
+  margin-right: 20px;
 }
 
 #bioContent {

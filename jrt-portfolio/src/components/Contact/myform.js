@@ -1,4 +1,8 @@
 import React from "react";
+const textArea = {
+  width:'250',
+  height:'150',
+};
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -18,11 +22,13 @@ export default class MyForm extends React.Component {
         method="POST"
       >
         {/* <!-- add your custom form HTML here --> */}
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        <label>Email: </label>&nbsp;
+        <input type="email" name="email" /><br/>
+        <label>Phone: </label>&nbsp;
+        <input type="text" name="phone" /><br/>
+        <label>Message: </label>&nbsp; 
+        <input id="textarea" type="textarea" name="message" style={textArea}/><br/> 
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button className="btn btn-white btn-animate">Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
     );

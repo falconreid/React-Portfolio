@@ -90,13 +90,14 @@ function About() {
               graduates of the University of Colorado Boulder. Joel is currently
               a student at the University of Denver's Coding Bootcamp.
               <br />
+              <hr/>
               <a href="https://www.facebook.com/joel.terrell">
                 <img
                   src="images/facebook-icon-basic-round-social-iconset-s-icons-7-300x300.png"
                   width="25px"
                   title="Find Me on Facebook"
                   alt="Find Me on Facebook"
-                />
+                />&nbsp;
               </a>
               <a href="https://www.linkedin.com/in/joelterrell/">
                 <img
