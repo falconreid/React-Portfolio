@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { FormspreeProvider } from '@formspree/react';
+import { FormspreeProvider } from "@formspree/react";
 
 import NavTabs from "./components/NavTabs";
 import About from "../src/components/About";
